@@ -1,0 +1,12 @@
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/bin/Debug/net7.0/SanctionScanner.Domain.deps.json
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/bin/Debug/net7.0/SanctionScanner.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/bin/Debug/net7.0/SanctionScanner.Domain.pdb
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.csproj.AssemblyReference.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.AssemblyInfoInputs.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.AssemblyInfo.cs
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.csproj.CoreCompileInputs.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/refint/SanctionScanner.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/SanctionScanner.Domain.pdb
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.Domain/obj/Debug/net7.0/ref/SanctionScanner.Domain.dll

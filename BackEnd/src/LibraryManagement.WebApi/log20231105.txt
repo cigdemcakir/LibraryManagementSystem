@@ -1,0 +1,18 @@
+2023-11-05 12:46:21.531 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-05 12:46:21.803 +03:00 [INF] CORS policy execution successful.
+2023-11-05 12:46:21.809 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 294.7288ms
+2023-11-05 12:46:21.820 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-05 12:46:21.823 +03:00 [INF] CORS policy execution successful.
+2023-11-05 12:46:21.857 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 20:52:27', Current time: '5.11.2023 09:46:21'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-05 12:46:21.915 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 20:52:27', Current time: '5.11.2023 09:46:21'.
+2023-11-05 12:46:21.918 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 97.5384ms
+2023-11-05 13:49:35.585 +03:00 [INF] Application is shutting down...

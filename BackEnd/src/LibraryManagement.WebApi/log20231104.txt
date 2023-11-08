@@ -1,0 +1,350 @@
+2023-11-04 14:55:07.923 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-04 14:55:08.898 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-04 14:55:08.898 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-04 14:55:08.900 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-04 14:55:08.900 +03:00 [INF] Hosting environment: Development
+2023-11-04 14:55:08.900 +03:00 [INF] Content root path: /Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.WebApi
+2023-11-04 14:55:10.045 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-04 14:55:10.395 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 356.7080ms
+2023-11-04 14:55:10.445 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - -
+2023-11-04 14:55:10.445 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-04 14:55:10.478 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-04 14:55:10.516 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-04 14:55:10.516 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-04 14:55:10.519 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-04 14:55:10.522 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 77.4728ms
+2023-11-04 14:55:10.522 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 44.5090ms
+2023-11-04 14:55:10.522 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - - - 200 143943 text/css 77.4382ms
+2023-11-04 14:55:10.887 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-04 14:55:11.147 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 259.2574ms
+2023-11-04 14:55:20.164 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-04 14:55:20.244 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 14:55:20.263 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 14:55:20.547 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-04 14:55:20.553 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi) in 284.3661ms
+2023-11-04 14:55:20.557 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 14:55:20.561 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 397.0117ms
+2023-11-04 14:55:23.374 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkLRQrwzddvaDXugBpoCprRxWCAapZY8yYh4iDnd-5o7rDGhbVLr-dR8OOwGGi5PQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - -
+2023-11-04 14:55:23.385 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 14:55:23.404 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 14:55:26.776 +03:00 [INF] Executed DbCommand (109ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-04 14:55:27.097 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI4ZWViNDZiOS0yNmVkLTRkNWUtOTg0Ni05NjdjZGRhZDE0ZDkiLCJleHAiOjE2OTkxMDI1MjYsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.Met48cuR1TatQNTOhDdxnfi6xqQQTg6dfsmt70u18SY&expiry_date=-8585025043585202798.
+2023-11-04 14:55:27.099 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi) in 3694.1785ms
+2023-11-04 14:55:27.100 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 14:55:27.124 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkLRQrwzddvaDXugBpoCprRxWCAapZY8yYh4iDnd-5o7rDGhbVLr-dR8OOwGGi5PQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - - - 302 0 - 3749.9919ms
+2023-11-04 14:55:43.891 +03:00 [INF] Application is shutting down...
+2023-11-04 18:36:08.550 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-04 18:36:09.280 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-04 18:36:09.281 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-04 18:36:09.283 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-04 18:36:09.284 +03:00 [INF] Hosting environment: Development
+2023-11-04 18:36:09.284 +03:00 [INF] Content root path: /Users/Levent/Desktop/SanctionScanner/BackEnd/src/SanctionScanner.WebApi
+2023-11-04 18:36:09.983 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-04 18:36:10.211 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 230.2885ms
+2023-11-04 18:36:10.239 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-04 18:36:10.240 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - -
+2023-11-04 18:36:10.271 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-04 18:36:10.272 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - - - 200 143943 text/css 31.4277ms
+2023-11-04 18:36:10.272 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-04 18:36:10.304 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-04 18:36:10.305 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-04 18:36:10.309 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 37.0409ms
+2023-11-04 18:36:10.309 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 70.3702ms
+2023-11-04 18:36:10.636 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-04 18:36:10.851 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.3397ms
+2023-11-04 18:36:25.069 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-04 18:36:25.137 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 18:36:25.149 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 18:36:25.390 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-04 18:36:25.395 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi) in 240.2791ms
+2023-11-04 18:36:25.399 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 18:36:25.401 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 332.1415ms
+2023-11-04 18:36:28.052 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmM4uUQuGNCmBQAHlLjaGHZAA-Xx2tKNTEDFjTg0I-Ta1J_zxECkh7Bd_O-DqhOoQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - -
+2023-11-04 18:36:28.064 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 18:36:28.087 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 18:36:31.685 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-04 18:36:32.013 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&expiry_date=-8585024910936036748.
+2023-11-04 18:36:32.015 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi) in 3927.293ms
+2023-11-04 18:36:32.016 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 18:36:32.045 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmM4uUQuGNCmBQAHlLjaGHZAA-Xx2tKNTEDFjTg0I-Ta1J_zxECkh7Bd_O-DqhOoQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - - - 302 0 - 3992.6309ms
+2023-11-04 18:39:02.025 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 18:39:02.035 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:39:02.044 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 18.2230ms
+2023-11-04 18:45:07.191 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 18:45:07.198 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:45:07.201 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 10.6771ms
+2023-11-04 18:45:18.887 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&negotiateVersion=1 - -
+2023-11-04 18:45:18.914 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:45:18.928 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&negotiateVersion=1 - - - 204 - - 41.8018ms
+2023-11-04 18:45:18.948 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&negotiateVersion=1 - 0
+2023-11-04 18:45:18.949 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:45:19.089 +03:00 [INF] Executing endpoint '/Hubs/AccountHub/negotiate'
+2023-11-04 18:45:19.110 +03:00 [INF] Executed endpoint '/Hubs/AccountHub/negotiate'
+2023-11-04 18:45:19.111 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&negotiateVersion=1 - 0 - 200 316 application/json 162.8348ms
+2023-11-04 18:45:19.136 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/Hubs/AccountHub?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&id=mXHiqGZu1uzL6f_uTGp3sw - -
+2023-11-04 18:45:19.136 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:45:19.137 +03:00 [INF] Executing endpoint '/Hubs/AccountHub'
+2023-11-04 18:45:52.651 +03:00 [INF] Executed endpoint '/Hubs/AccountHub'
+2023-11-04 18:45:52.652 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/Hubs/AccountHub?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0YWU1NTg0Zi0zYmIwLTQ5NzktYThkMS05YTE2Y2YxMDllMzMiLCJleHAiOjE2OTkxMTU3OTEsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.BOLX8rSR313wcvfYnaY-_DDTyxXUQ3oDGthXpZO32Ig&id=mXHiqGZu1uzL6f_uTGp3sw - - - 101 - - 33516.3888ms
+2023-11-04 18:46:33.122 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-04 18:46:33.123 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 18:46:33.125 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 18:46:33.149 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-04 18:46:33.149 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi) in 24.3316ms
+2023-11-04 18:46:33.149 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 18:46:33.150 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 27.3489ms
+2023-11-04 18:46:36.458 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkHZxGzMWYiH4Xn5KYcWPAzChyY-tt6U_MfgK78EtmV-l9fx3By71dxJHaMS6GuZw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - -
+2023-11-04 18:46:36.459 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 18:46:36.459 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 18:46:37.158 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-04 18:46:37.163 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJhY2NkZjYxNC1iNDQzLTQ3ZDUtOWI3Yy02ZGM5OGRmNjQwODUiLCJleHAiOjE2OTkxMTYzOTcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.jdTqJRl70Wp_5MIaQnVZivztx6RcPS5sIgumo20hmhk&expiry_date=-8585024904883144658.
+2023-11-04 18:46:37.163 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi) in 703.4108ms
+2023-11-04 18:46:37.163 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 18:46:37.164 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkHZxGzMWYiH4Xn5KYcWPAzChyY-tt6U_MfgK78EtmV-l9fx3By71dxJHaMS6GuZw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - - - 302 0 - 705.2742ms
+2023-11-04 18:46:39.059 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 18:46:39.060 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:46:39.060 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.0296ms
+2023-11-04 18:47:20.787 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 18:47:20.788 +03:00 [INF] CORS policy execution successful.
+2023-11-04 18:47:20.788 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.4839ms
+2023-11-04 21:03:32.532 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:03:32.543 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:03:32.549 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 19.3765ms
+2023-11-04 21:03:34.993 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:03:34.995 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:03:34.995 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 2.7067ms
+2023-11-04 21:04:07.114 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:04:07.115 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:04:07.115 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.6092ms
+2023-11-04 21:04:09.532 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:04:09.540 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:04:09.542 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 8.9278ms
+2023-11-04 21:06:24.379 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-04 21:06:24.390 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 21:06:24.397 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 21:06:24.427 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-04 21:06:24.427 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi) in 12.6162ms
+2023-11-04 21:06:24.427 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 21:06:24.428 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 48.5149ms
+2023-11-04 21:06:27.408 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkZO0nEeYW9ie8icw0kVm5w6bmJymKxKoMv_GNXTKQSEI2Ue71xol1TU7y6QnhTsg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - -
+2023-11-04 21:06:27.409 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 21:06:27.410 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 21:06:27.970 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-04 21:06:27.977 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiI0Yjc3MDZjNC0xMmY5LTQ4MmEtOTdlYS1mOWY5ZDUxMDkyZmQiLCJleHAiOjE2OTkxMjQ3ODcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.EUM9rX-p1-PXAWlsp9EhibLOABuTg8UzBwdX67OoTuc&expiry_date=-8585024820975019618.
+2023-11-04 21:06:27.977 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi) in 567.3364ms
+2023-11-04 21:06:27.977 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 21:06:27.978 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkZO0nEeYW9ie8icw0kVm5w6bmJymKxKoMv_GNXTKQSEI2Ue71xol1TU7y6QnhTsg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - - - 302 0 - 569.8776ms
+2023-11-04 21:09:31.941 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:09:31.942 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:09:31.948 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 6.6213ms
+2023-11-04 21:09:31.950 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:09:31.951 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:09:31.962 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 11.0033ms
+2023-11-04 21:09:33.230 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:09:33.231 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:09:33.232 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.8226ms
+2023-11-04 21:09:59.321 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:09:59.322 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:09:59.323 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 1.6153ms
+2023-11-04 21:09:59.332 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:09:59.333 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:09:59.333 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.2167ms
+2023-11-04 21:10:23.799 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:10:23.799 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:10:23.799 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.5644ms
+2023-11-04 21:10:23.828 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:10:23.830 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:10:23.831 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 2.2680ms
+2023-11-04 21:13:55.815 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:13:55.820 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:13:55.825 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 9.9439ms
+2023-11-04 21:13:55.826 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:13:55.827 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:13:55.836 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 9.5447ms
+2023-11-04 21:17:46.956 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:17:46.960 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:17:46.962 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 6.0429ms
+2023-11-04 21:17:46.964 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:17:46.965 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:17:46.974 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 8.8946ms
+2023-11-04 21:18:08.031 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:18:08.032 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:18:08.033 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 1.8167ms
+2023-11-04 21:18:08.044 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:18:08.045 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:18:08.047 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.9458ms
+2023-11-04 21:20:45.471 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:20:45.475 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:20:45.475 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 3.7310ms
+2023-11-04 21:20:45.481 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:20:45.481 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:20:45.483 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.8051ms
+2023-11-04 21:22:19.237 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:22:19.241 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:22:19.241 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 4.6927ms
+2023-11-04 21:22:19.250 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:22:19.251 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:22:19.256 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 6.0214ms
+2023-11-04 21:23:08.718 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:23:08.718 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:23:08.718 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.5086ms
+2023-11-04 21:23:08.723 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:23:08.724 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:23:08.729 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 5.8094ms
+2023-11-04 21:23:11.996 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:23:11.997 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:23:12.001 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 4.9984ms
+2023-11-04 21:23:39.120 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:23:39.121 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:23:39.121 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 1.3000ms
+2023-11-04 21:23:39.125 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:23:39.125 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:23:39.126 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.0644ms
+2023-11-04 21:27:34.365 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:27:34.366 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:27:34.366 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.6453ms
+2023-11-04 21:27:34.369 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:27:34.369 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:27:34.369 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 0.8279ms
+2023-11-04 21:28:21.274 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:28:21.276 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:28:21.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 2.2164ms
+2023-11-04 21:28:21.278 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:28:21.278 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:28:21.280 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 2.2358ms
+2023-11-04 21:33:19.942 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:19.943 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:19.943 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.9015ms
+2023-11-04 21:33:19.947 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:19.947 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:19.953 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 5.8233ms
+2023-11-04 21:33:21.637 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:21.637 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:21.638 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.2253ms
+2023-11-04 21:33:51.371 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:51.373 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:51.373 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 2.5342ms
+2023-11-04 21:33:51.386 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:51.386 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:51.389 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 3.1765ms
+2023-11-04 21:33:52.536 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 21:33:52.536 +03:00 [INF] CORS policy execution successful.
+2023-11-04 21:33:52.537 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 0.6718ms
+2023-11-04 22:50:40.796 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 22:50:40.800 +03:00 [INF] CORS policy execution successful.
+2023-11-04 22:50:40.802 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 5.9312ms
+2023-11-04 22:50:40.804 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 22:50:40.804 +03:00 [INF] CORS policy execution successful.
+2023-11-04 22:50:40.869 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:50:40'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-04 22:50:40.984 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:50:40'.
+2023-11-04 22:50:40.985 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 181.0341ms
+2023-11-04 22:51:16.083 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 22:51:16.083 +03:00 [INF] CORS policy execution successful.
+2023-11-04 22:51:16.083 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.7843ms
+2023-11-04 22:51:16.086 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 22:51:16.087 +03:00 [INF] CORS policy execution successful.
+2023-11-04 22:51:16.090 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:51:16'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-04 22:51:16.092 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:51:16'.
+2023-11-04 22:51:16.092 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 6.0406ms
+2023-11-04 22:51:18.644 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 22:51:18.644 +03:00 [INF] CORS policy execution successful.
+2023-11-04 22:51:18.645 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:51:18'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-04 22:51:18.648 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '4.11.2023 19:06:27', Current time: '4.11.2023 19:51:18'.
+2023-11-04 22:51:18.649 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 4.6689ms
+2023-11-04 22:52:24.397 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-04 22:52:24.398 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 22:52:24.401 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 22:52:24.409 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-04 22:52:24.410 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi) in 8.0047ms
+2023-11-04 22:52:24.410 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (SanctionScanner.WebApi)'
+2023-11-04 22:52:24.411 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 13.5006ms
+2023-11-04 22:52:27.094 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkUgldKOFMBdSXiIkYR4bY3Lv-bteyGbB2mBNv2WeejcSOHMA9P0Vxzi58japARrg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - -
+2023-11-04 22:52:27.095 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 22:52:27.096 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (SanctionScanner.WebApi).
+2023-11-04 22:52:27.501 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-04 22:52:27.508 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&expiry_date=-8585024757379702088.
+2023-11-04 22:52:27.508 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi) in 412.0415ms
+2023-11-04 22:52:27.508 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (SanctionScanner.WebApi)'
+2023-11-04 22:52:27.508 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkUgldKOFMBdSXiIkYR4bY3Lv-bteyGbB2mBNv2WeejcSOHMA9P0Vxzi58japARrg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=consent - - - 302 0 - 414.2119ms
+2023-11-04 23:07:50.026 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 23:07:50.031 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:07:50.033 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 7.5418ms
+2023-11-04 23:07:50.037 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 23:07:50.038 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:07:50.043 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 6.5938ms
+2023-11-04 23:07:58.364 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 23:07:58.365 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:07:58.365 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.6585ms
+2023-11-04 23:07:58.378 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 23:07:58.379 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:07:58.380 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 2.6920ms
+2023-11-04 23:08:16.197 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 23:08:16.197 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:16.197 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.4215ms
+2023-11-04 23:08:16.209 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 23:08:16.209 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:16.212 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 2.9102ms
+2023-11-04 23:08:18.343 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - -
+2023-11-04 23:08:18.346 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:18.365 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - - - 204 - - 22.1283ms
+2023-11-04 23:08:18.387 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - 0
+2023-11-04 23:08:18.388 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:18.391 +03:00 [INF] Executing endpoint '/Hubs/AccountHub/negotiate'
+2023-11-04 23:08:18.406 +03:00 [INF] Executed endpoint '/Hubs/AccountHub/negotiate'
+2023-11-04 23:08:18.406 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - 0 - 200 316 application/json 18.4140ms
+2023-11-04 23:08:18.423 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/Hubs/AccountHub?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&id=bf78Ls7JjlMa4hcgZVf_7Q - -
+2023-11-04 23:08:18.424 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:18.424 +03:00 [INF] Executing endpoint '/Hubs/AccountHub'
+2023-11-04 23:08:53.759 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - -
+2023-11-04 23:08:53.759 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:53.759 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Accounts - - - 204 - - 0.3589ms
+2023-11-04 23:08:53.768 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Accounts - -
+2023-11-04 23:08:53.768 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:08:53.769 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Accounts - - - 404 0 - 1.2697ms
+2023-11-04 23:10:08.176 +03:00 [INF] Executed endpoint '/Hubs/AccountHub'
+2023-11-04 23:10:08.176 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/Hubs/AccountHub?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&id=bf78Ls7JjlMa4hcgZVf_7Q - - - 101 - - 109752.2741ms
+2023-11-04 23:10:08.219 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - -
+2023-11-04 23:10:08.220 +03:00 [INF] CORS policy execution successful.
+2023-11-04 23:10:08.220 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/AccountHub/negotiate?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJlbWFpbCI6ImNpZ2RlbWNha2lyNDg5N0BnbWFpbC5jb20iLCJzdWIiOiIwNTEwZTg3Ny0wMmYxLTQxM2ItYTZjMC05ZDE3MGJiNDVlZGUiLCJnaXZlbl9uYW1lIjoiw4dpxJ9kZW0iLCJmYW1pbHlfbmFtZSI6IsOHYWvEsXIiLCJqdGkiOiJkZTI2NDBlZS0wOTYxLTRiOGQtOTQ2ZS01M2Q0MDU5ZGM2MzEiLCJleHAiOjE2OTkxMzExNDcsImlzcyI6IkNyYXdsZXIiLCJhdWQiOiJDcmF3bGVyIn0.QaAiq_Nh-c6FUx45XysIVguKan8DbiNQuyaUEr9QDrE&negotiateVersion=1 - - - 204 - - 0.6315ms

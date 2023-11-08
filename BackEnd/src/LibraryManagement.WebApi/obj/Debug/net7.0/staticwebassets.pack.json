@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "PackagePath": "staticwebassets/email_templates/email_confirmation.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.LibraryManagement.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.LibraryManagement.WebApi.props",
+      "PackagePath": "build\\LibraryManagement.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.LibraryManagement.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\LibraryManagement.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.LibraryManagement.WebApi.props",
+      "PackagePath": "buildTransitive\\LibraryManagement.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

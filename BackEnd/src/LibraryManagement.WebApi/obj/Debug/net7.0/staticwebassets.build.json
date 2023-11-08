@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "PrQj3wRonuCsqc26MaoT/HCNp9fmnjux8gnj6cXpn1g=",
+  "Source": "LibraryManagement.WebApi",
+  "BasePath": "_content/LibraryManagement.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryManagement.WebApi/wwwroot",
+      "Source": "LibraryManagement.WebApi",
+      "ContentRoot": "/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.WebApi/wwwroot/",
+      "BasePath": "_content/LibraryManagement.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "SourceId": "LibraryManagement.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.WebApi/wwwroot/",
+      "BasePath": "_content/LibraryManagement.WebApi",
+      "RelativePath": "email_templates/email_confirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/email_templates/email_confirmation.html"
+    }
+  ]
+}

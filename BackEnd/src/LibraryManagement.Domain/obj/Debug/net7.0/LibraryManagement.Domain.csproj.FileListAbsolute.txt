@@ -1,0 +1,12 @@
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/bin/Debug/net7.0/LibraryManagement.Domain.deps.json
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/bin/Debug/net7.0/LibraryManagement.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/bin/Debug/net7.0/LibraryManagement.Domain.pdb
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.csproj.AssemblyReference.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.AssemblyInfoInputs.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.AssemblyInfo.cs
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.csproj.CoreCompileInputs.cache
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/refint/LibraryManagement.Domain.dll
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/LibraryManagement.Domain.pdb
+/Users/Levent/Desktop/SanctionScanner/BackEnd/src/LibraryManagement.Domain/obj/Debug/net7.0/ref/LibraryManagement.Domain.dll
